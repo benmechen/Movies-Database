@@ -1,0 +1,43 @@
+.movie-container:hover {
+    text-decoration: none;
+}
+
+.movie-container, img {
+    height: 18em;
+    width: 12em;
+    border-radius: 10px;
+    background-size: contain;
+    text-decoration: none;
+    overflow: hidden;
+    margin: 1% auto;
+    margin-right: 3.5%;
+}
+
+.movie-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-popover {
+    position: relative;
+    color: white;
+    background-color: rgba(51, 51, 51, 0.8);
+    min-height: 25%;
+    width: 120%;
+    margin-top: auto;
+    margin-left: -10%;
+    justify-self: stretch;
+    opacity: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: opacity 0.25s;
+    overflow: hidden;
+}
+
+.movie-container:hover .movie-popover {
+    opacity: 100;
+}
+
+.movie-container:hover .movie-container-img {
+    /* width: 14em;
+    height: 20em; */
+}
